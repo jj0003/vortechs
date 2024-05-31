@@ -2,32 +2,150 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Components */
+.btn {
+  @apply px-3 py-1 rounded-full uppercase text-white transition-colors duration-300;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.btn-primary {
+  @apply rounded-md font-semibold text-white transition-colors duration-300 hover:text-blue-600;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.btn-secondary {
+  @apply bg-black hover:bg-[#0049FF] tracking-wider text-xs;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.btn-tertiary {
+  @apply bg-white hover:bg-[#0049FF] tracking-wider text-xs text-black hover:text-white;
+}
+
+.btn-quaternary {
+  @apply bg-red-600 hover:bg-red-400 tracking-wider text-xs text-white hover:text-white;
+}
+
+.btn-link {
+  @apply text-sm hover:text-blue-600;
+}
+
+/* Typography */
+
+.satoshi-light {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.satoshi-light-italic {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.satoshi-regular {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.satoshi-italic {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.satoshi-medium {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.satoshi-medium-italic {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.satoshi-bold {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.satoshi-bold-italic {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.satoshi-black {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.satoshi-black-italic {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Styles */
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Satoshi', sans-serif;
+}
+
+h1 {
+  font-weight: 900; /* Black */
+  font-size: 2.5rem; /* Adjust the size as needed */
+}
+
+h2 {
+  font-weight: 700; /* Bold */
+  font-size: 2rem; /* Adjust the size as needed */
+}
+
+h3 {
+  font-weight: 500; /* Medium */
+  font-size: 1.75rem; /* Adjust the size as needed */
+}
+
+h4 {
+  font-weight: 400; /* Regular */
+  font-size: 1.5rem; /* Adjust the size as needed */
+}
+
+h5 {
+  font-weight: 300; /* Light */
+  font-size: 1.25rem; /* Adjust the size as needed */
+}
+
+h6 {
+  font-weight: 300; /* Light */
+  font-size: 1rem; /* Adjust the size as needed */
+}
+
+p {
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-size: 1rem; /* Adjust the size as needed */
+}
+
+
+/* This styles the entire scrollbar (track + thumb) */
+::-webkit-scrollbar {
+  width: 12px; /* width of the vertical scrollbar */
+  height: 15px; /* height of the horizontal scrollbar */
+}
+
+/* This styles the draggable part of the scrollbar (thumb) */
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey; /* thumb color */
+  border-radius: 6px; /* rounded corners for the thumb */
+}
+
+/* This styles the part of the scrollbar track where the thumb is not present */
+::-webkit-scrollbar-track {
+  background: lightgrey; /* track color */
+  border-radius: 10px; /* rounded corners for the track */
 }

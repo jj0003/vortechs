@@ -1,113 +1,257 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
+  
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+      <hr className="mt-20 border-t border-black"/>
+
+      {/* Hero */}
+      <div className="flex lg:flex-row flex-col mt-5 gap-10 w-full">
+        <h6 className="flex">
+          Vortechs is your go-to web development studio, specializing in affordable and stunningly fast web applications. We pride ourselves on creating fresh, dynamic experiences that captivate and engage users. At Vortechs, we're always exploring new technologies to ensure our solutions are both cutting-edge and effective.
+        </h6>
+        <h6 className="flex">
+          Our guiding principle is simple: to deliver work that fills both us and our clients with immense pride. We achieve this by blending artistry with performance, dedicating meticulous attention to each project, and carefully choosing the clients we collaborate with.
+        </h6>
+        <h6 className="flex">
+          Partnering with Vortechs is like having a dedicated designer and developer by your side, ready to support you on your digital journey. We are approachable and friendly, yet highly organized and proactive – the kind of partner you would love to tell your friends about.
+        </h6>
+      </div>
+      <div className="mt-20">
+        <Link href={""} className="btn-link">
+          (vortechs values)
+        </Link>
+        <h1 className="text-7xl uppercase satoshi-regular">
+          We bring stunning online experiences at an <i>affordable price</i>.
+        </h1>
+      </div>
+
+      {/* WE BUILD STUNNING ONLINE EXPERIENCES */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+        <div className="relative bg-[url('/images/McGregorCoxall.jpg')] bg-cover rounded-lg h-64 flex flex-col justify-end transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blue] active:translate-x-[0px] active:translate-y-[0px] active:rounded-lg active:shadow-none">
+          <div className="p-4">
+            <h5 className="text-white font-semibold">
+              McGregor Coxall
+            </h5>
+            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+              View Project
+            </Link>
+          </div>
+        </div>
+        <div className="relative bg-[url('/images/PeachesPilates.jpg')] bg-cover bg-center rounded-lg h-64 flex flex-col justify-end transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blue] active:translate-x-[0px] active:translate-y-[0px] active:rounded-lg active:shadow-none">
+          <div className="p-4">
+            <h5 className="text-white font-semibold">
+              Peaches Pilates
+            </h5>
+            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+              View Project
+            </Link>
+          </div>
+        </div>
+        <div className="relative bg-[url('/images/SBLSolutions.webp')] bg-cover bg-bottom rounded-lg h-64 flex flex-col justify-end transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blue] active:translate-x-[0px] active:translate-y-[0px] active:rounded-lg active:shadow-none">
+          <div className="p-4">
+            <h5 className="text-white font-semibold">
+              SBL Solutions
+            </h5>
+            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+              View Project
+            </Link>
+          </div>
+        </div>
+        <div className="relative bg-[url('/images/OceanAndEarth.webp')] bg-cover rounded-lg h-64 flex flex-col justify-end transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blue] active:translate-x-[0px] active:translate-y-[0px] active:rounded-lg active:shadow-none">
+          <div className="p-4">
+            <h5 className="text-white font-semibold">
+              Ocean And Earth
+            </h5>
+            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+              View Project
+            </Link>
+          </div>
+        </div>
+        <div className="relative bg-[url('/images/DeusExMachina.webp')] bg-cover rounded-lg h-64 flex flex-col justify-end transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blue] active:translate-x-[0px] active:translate-y-[0px] active:rounded-lg active:shadow-none">
+          <div className="p-4">
+            <h5 className="text-white font-semibold">
+              Deus Ex Machina
+            </h5>
+            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+              View Project
+            </Link>
+          </div>
+        </div>
+        <div className="relative bg-[url('/images/Carve.webp')] bg-cover bg-center rounded-lg h-64 flex flex-col justify-end transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blue] active:translate-x-[0px] active:translate-y-[0px] active:rounded-lg active:shadow-none">
+          <div className="p-4">
+            <h5 className="text-white font-semibold">
+              Carve
+            </h5>
+            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+              View Project
+            </Link>
+          </div>
+        </div>
+        <div className="relative bg-[url('/images/Stokke.webp')] bg-cover bg-top rounded-lg h-64 flex flex-col justify-end transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blue] active:translate-x-[0px] active:translate-y-[0px] active:rounded-lg active:shadow-none">
+          <div className="p-4">
+            <h5 className="text-white font-semibold">
+              Stokke
+            </h5>
+            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+              View Project
+            </Link>
+          </div>
+        </div>
+        <div className="relative bg-[url('/images/BWWater.jpg')] bg-cover rounded-lg h-64 flex flex-col justify-end transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blue] active:translate-x-[0px] active:translate-y-[0px] active:rounded-lg active:shadow-none">
+          <div className="p-4">
+            <h5 className="text-white font-semibold">
+              BW Water
+            </h5>
+            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+              View Project
+            </Link>
+          </div>
+        </div>
+      </div>
+      <p className="text-gray-400 mt-2">
+        *These are some of the projects our teammembers have worked on in the past.
+      </p>
+      
+
+
+      {/* What We Do */}
+      <div className="bg-[#0049FF] rounded-md p-5 mt-20">
+      <div className="flex flex-col items-center">
+        <p className="inline-block text-white px-2 py-1 rounded-full uppercase text-black border border-white tracking-wider text-xs">
+          In a Nutshell
+        </p>  
+        <h1 className="satoshi-black text-white">What We Do</h1>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 mt-3">
+        <div className="p-4 rounded-md bg-white">
+            <h5 className="font-semibold">
+              design
+            </h5>
+            <p>
+              visual identity<br></br>
+              brand guidelines<br></br>
+              information architecture<br></br>
+              user experience<br></br>
+              web/mobile apps
+            </p>
+        </div>
+        <div className="p-4 rounded-md bg-white">
+            <h5 className="font-semibold">
+              development
+            </h5>
+            <p>
+              custom landing pages<br></br>
+              CMS integrations<br></br>
+              analytics<br></br>
+              A/B testing<br></br>
+              web development
+            </p>
+        </div>
+      </div>
+      </div>
+      
+
+
+      <h1 className="text-7xl uppercase satoshi-regular mt-20">
+        APPLY FOR A SLOT TO BECOME ONE OF FIVE NEW CLIENTS WE SELECT EVERY YEAR
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5 mt-4 mb-20">
+        <div className="p-4 rounded-md border-2 border-gray-400 bg-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blue] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+            <h5 className="font-medium uppercase text-3xl text-gray-400">
+              slot<br></br>one
+            </h5>
+            <h5 className="mb-2">
+              starting at $400/month
+            </h5>
+            <p>
+              visual identity<br></br>
+              brand guidelines<br></br>
+              information architecture<br></br>
+              user experience<br></br>
+              web/mobile apps
+            </p>
+            <Link href={"https://cal.com/vortechs/30min"} className="btn btn-quaternary mt-2 inline-block">
+              book a free call today
+            </Link>
+        </div>
+        <div className="p-4  rounded-md border-2 border-black bg-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blue] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+            <h5 className="font-semibold">
+              development
+            </h5>
+            <h5 className="mb-2">
+              starting at $700/month
+            </h5>
+            <p>
+              custom landing pages<br></br>
+              CMS integrations<br></br>
+              analytics<br></br>
+              A/B testing<br></br>
+              web development
+            </p>
+            <Link href={"https://cal.com/vortechs/30min"} className="btn btn-quaternary mt-2 inline-block">
+              book a free call today
+            </Link>
+        </div>
+        <div className="p-4  rounded-md border-2 border-black bg-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blue] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+            <h5 className="font-semibold">
+              design & development
+            </h5>
+            <h5 className="mb-2">
+              starting at $900/month
+            </h5>
+            <p>
+              custom landing pages<br></br>
+              CMS integrations<br></br>
+              analytics<br></br>
+              A/B testing<br></br>
+              web development
+            </p>
+            <Link href={"https://cal.com/vortechs/30min"} className="btn btn-quaternary mt-2 inline-block">
+              book a free call today
+            </Link>
+        </div>
+        <div className="p-4 rounded-md border-2 border-black bg-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blue] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+            <h5 className="font-semibold">
+              design
+            </h5>
+            <h5 className="mb-2">
+              starting at $400/month
+            </h5>
+            <p>
+              visual identity<br></br>
+              brand guidelines<br></br>
+              information architecture<br></br>
+              user experience<br></br>
+              web/mobile apps
+            </p>
+            <Link href={"https://cal.com/vortechs/30min"} className="btn btn-quaternary mt-2 inline-block">
+              book a free call today
+            </Link>
+        </div>
+        <div className="p-4 rounded-md border-2 border-black bg-white transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blue] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+            <h5 className="font-semibold">
+              design
+            </h5>
+            <h5 className="mb-2">
+              starting at $400/month
+            </h5>
+            <p>
+              visual identity<br></br>
+              brand guidelines<br></br>
+              information architecture<br></br>
+              user experience<br></br>
+              web/mobile apps
+            </p>
+            <Link href={"https://cal.com/vortechs/30min"} className="btn btn-quaternary mt-2 inline-block">
+              book a free call today
+            </Link>
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+            
+    </div>
   );
 }
