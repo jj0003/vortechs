@@ -112,7 +112,7 @@ export default function Home() {
           </div>
         </Link>
         <h5 className="mt-2 text-white font-light text-sm">
-          Peaches Pilates
+          Peaches Pilatess
         </h5>
       </div>
       <div className="lg:h-96 h-48 flex flex-col justify-end">
