@@ -11,6 +11,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import Image from "next/image";
 
 
 
@@ -52,19 +53,19 @@ export default function Home() {
         className="mySwiper hover:cursor-grab	mt-40"
       >
         <SwiperSlide >
-        <img className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall1.jpg"></img>
+        <Image alt="" className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall1.jpg" width={500} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <img className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall2.jpg"></img>
+        <Image alt="" className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall2.jpg" width={500} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <img className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall3.jpg"></img>
+        <Image alt="" className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall3.jpg" width={500} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <img className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall4.jpg"></img>
+        <Image alt="" className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall4.jpg" width={500} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <img className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall6.jpg"></img>
+        <Image alt="" className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall6.jpg" width={500} height={100}></Image>
         </SwiperSlide>
       </Swiper>
       </div>
@@ -77,19 +78,19 @@ export default function Home() {
         className="mySwiper hover:cursor-grab	mt-40"
       >
         <SwiperSlide >
-        <img className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall1.jpg"></img>
+        <Image alt="" className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall1.jpg" width={1000} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <img className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall2.jpg"></img>
+        <Image alt="" className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall2.jpg" width={1000} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <img className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall3.jpg"></img>
+        <Image alt="" className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall3.jpg" width={1000} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <img className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall4.jpg"></img>
+        <Image alt="" className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall4.jpg" width={1000} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <img className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall6.jpg"></img>
+        <Image alt="" className="rounded-md" src="/images/mcgregorcoxall/McGregorCoxall6.jpg" width={1000} height={100}></Image>
         </SwiperSlide>
       </Swiper>
 
