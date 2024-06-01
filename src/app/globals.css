@@ -27,6 +27,14 @@
   @apply text-sm hover:text-blue-600;
 }
 
+.btn-disabled {
+  @apply bg-gray-300 text-gray-500 text-xs cursor-not-allowed;
+}
+
+.btn-apply {
+  @apply bg-white text-black hover:text-white tracking-wider text-xs;
+}
+
 /* Typography */
 
 .satoshi-light {

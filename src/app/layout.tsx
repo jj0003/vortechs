@@ -6,6 +6,7 @@ import "./fonts.css"; // Add this line
 import Navigation from "@/components/navigation";
 import SmoothScrolling from "@/components/SmoothScrolling";
 import Footer from '@/components/footer';
+import { BrowserRouter } from 'react-router-dom';
 
 export const metadata: Metadata = {
   title: "VORTECHS",
@@ -21,7 +22,8 @@ export default function RootLayout({
     <SmoothScrolling>
     <html lang="en">
       <body style={{ fontFamily: 'Satoshi, sans-serif' }} className='bg-[#EEEEEE] p-5'>
-        <nav className="sticky top-0 z-50">
+        <nav className="sticky top-0 z-50 flex items-center justify-between">
+          <h1 className="satoshi-bold-italic">vortechs</h1>
           <Navigation />
         </nav>
         {children}

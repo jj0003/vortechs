@@ -1,3 +1,4 @@
+import Navigation from "@/components/navigation";
 import Link from "next/link";
 
 export default function Home() {
@@ -159,7 +160,7 @@ export default function Home() {
         APPLY FOR A SLOT TO BECOME ONE OF FIVE NEW CLIENTS WE SELECT EVERY YEAR
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5 mt-4 mb-20">
-        <div className="relative p-4 rounded-md border-2 border-gray-400 bg-white lg:h-96 md:h-72 sm:h-40 h-40 cursor-not-allowed">
+        <div className="relative p-4 rounded-md border-2 border-gray-400 bg-white lg:h-96 md:h-72 sm:h-64 h-64 cursor-not-allowed">
           <h5 className="font-medium uppercase text-3xl text-gray-400">
             slot<br></br>one
           </h5>
@@ -167,7 +168,7 @@ export default function Home() {
               booked
           </Link>
         </div>
-        <div className="relative p-4 rounded-md border-2 border-gray-400 bg-[#0049FF] lg:h-96 md:h-72 sm:h-40 h-40 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+        <div className="relative p-4 rounded-md border-2 border-gray-400 bg-[#0049FF] lg:h-96 md:h-72 sm:h-64 h-64 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
           <h5 className="font-medium uppercase text-3xl text-white">
             slot<br></br>two
           </h5>
@@ -175,7 +176,7 @@ export default function Home() {
             🔥available
           </Link>
         </div>
-        <div className="relative p-4 rounded-md border-2 border-gray-400 bg-[#0049FF] lg:h-96 md:h-72 sm:h-40 h-40 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+        <div className="relative p-4 rounded-md border-2 border-gray-400 bg-[#0049FF] lg:h-96 md:h-72 sm:h-64 h-64 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
           <h5 className="font-medium uppercase text-3xl text-white">
             slot<br></br>three
           </h5>
@@ -183,7 +184,7 @@ export default function Home() {
             🔥available
           </Link>
         </div>
-        <div className="relative p-4 rounded-md border-2 border-gray-400 bg-[#0049FF] lg:h-96 md:h-72 sm:h-40 h-40 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+        <div className="relative p-4 rounded-md border-2 border-gray-400 bg-[#0049FF] lg:h-96 md:h-72 sm:h-64 h-64 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
           <h5 className="font-medium uppercase text-3xl text-white">
             slot<br></br>four
           </h5>
@@ -191,7 +192,7 @@ export default function Home() {
             🔥available
           </Link>
         </div>
-        <div className="relative p-4 rounded-md border-2 border-gray-400 bg-[#0049FF] lg:h-96 md:h-72 sm:h-40 h-40 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+        <div className="relative p-4 rounded-md border-2 border-gray-400 bg-[#0049FF] lg:h-96 md:h-72 sm:h-64 h-64 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
           <h5 className="font-medium uppercase text-3xl text-white">
             slot<br></br>five
           </h5>

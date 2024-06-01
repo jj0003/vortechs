@@ -4,8 +4,7 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 
 const NavigationMenuDemo = () => {
   return (
-    <div className="flex items-center justify-between">
-      <h1 className="satoshi-bold-italic">vortechs</h1>
+    <div className="">
       <NavigationMenu.Root className="flex justify-end">
         <NavigationMenu.List className="flex justify-center bg-white p-1 gap-1 rounded-full">
           
