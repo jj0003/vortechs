@@ -10,7 +10,7 @@ export default function Home() {
       {/* Hero */}
       <div className="flex lg:flex-row flex-col mt-5 gap-10 w-full">
         <h6 className="flex">
-          Vortechs is your go-to web development studio, specializing in affordable and stunningly fast web applications. We pride ourselves on creating fresh, dynamic experiences that captivate and engage users. At Vortechs, we're always exploring new technologies to ensure our solutions are both cutting-edge and effective.
+          Vortechs is your go-to web development studio, specializing in affordable and stunningly fast web applications. We pride ourselves on creating fresh, dynamic experiences that captivate and engage users. At Vortechs, w&apos;re always exploring new technologies to ensure our solutions are both cutting-edge and effective.
         </h6>
         <h6 className="flex">
           Our guiding principle is simple: to deliver work that fills both us and our clients with immense pride. We achieve this by blending artistry with performance, dedicating meticulous attention to each project, and carefully choosing the clients we collaborate with.
