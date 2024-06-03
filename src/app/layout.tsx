@@ -6,7 +6,6 @@ import "./fonts.css"; // Add this line
 import Navigation from "@/components/navigation";
 import SmoothScrolling from "@/components/SmoothScrolling";
 import Footer from '@/components/footer';
-import { BrowserRouter } from 'react-router-dom';
 
 export const metadata: Metadata = {
   title: "VORTECHS",

@@ -4,7 +4,6 @@ export default function Home() {
   
   return (
     <div>
-      <hr className="mt-20 border-t border-black"/>
 
       {/* Hero */}
       <div className="flex lg:flex-row flex-col mt-5 gap-10 w-full">
@@ -34,7 +33,7 @@ export default function Home() {
             <h5 className="text-white font-semibold">
               McGregor Coxall
             </h5>
-            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+            <Link href={"/work/mcgregor-coxall"} className="btn btn-secondary mt-2 inline-block">
               View Project
             </Link>
           </div>
@@ -44,7 +43,7 @@ export default function Home() {
             <h5 className="text-white font-semibold">
               Peaches Pilates
             </h5>
-            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+            <Link href={"/work/peaches-pilates"} className="btn btn-secondary mt-2 inline-block">
               View Project
             </Link>
           </div>
@@ -54,7 +53,7 @@ export default function Home() {
             <h5 className="text-white font-semibold">
               SBL Solutions
             </h5>
-            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+            <Link href={"/work/sbl-solutions"} className="btn btn-secondary mt-2 inline-block">
               View Project
             </Link>
           </div>
@@ -64,7 +63,7 @@ export default function Home() {
             <h5 className="text-white font-semibold">
               Ocean And Earth
             </h5>
-            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+            <Link href={"/work/ocean-and-earth"} className="btn btn-secondary mt-2 inline-block">
               View Project
             </Link>
           </div>
@@ -74,7 +73,7 @@ export default function Home() {
             <h5 className="text-white font-semibold">
               Deus Ex Machina
             </h5>
-            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+            <Link href={"/work/deus-ex-machina"} className="btn btn-secondary mt-2 inline-block">
               View Project
             </Link>
           </div>
@@ -84,7 +83,7 @@ export default function Home() {
             <h5 className="text-white font-semibold">
               Carve
             </h5>
-            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+            <Link href={"/work/carve"} className="btn btn-secondary mt-2 inline-block">
               View Project
             </Link>
           </div>
@@ -94,7 +93,7 @@ export default function Home() {
             <h5 className="text-white font-semibold">
               Stokke
             </h5>
-            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+            <Link href={"/work/stokke"} className="btn btn-secondary mt-2 inline-block">
               View Project
             </Link>
           </div>
@@ -104,14 +103,14 @@ export default function Home() {
             <h5 className="text-white font-semibold">
               BW Water
             </h5>
-            <Link href={""} className="btn btn-secondary mt-2 inline-block">
+            <Link href={"/work/bw-water"} className="btn btn-secondary mt-2 inline-block">
               View Project
             </Link>
           </div>
         </div>
       </div>
-      <p className="text-gray-400 mt-2">
-        *These are some of the projects our teammembers have worked on in the past.
+      <p className="text-gray-400 mt-2 text-xs">
+        * These are some of the projects our teammembers have worked on in the past. Vortechs does not take credit for the design or development of these projects. All the rights belong to the respective owners.
       </p>
       
 
