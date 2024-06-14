@@ -15,7 +15,7 @@ import Image from "next/image";
 
 
 
-export default function Peaches() {
+export default function Deus() {
   
   return (
     <body className="bg-[#171717] p-5">
@@ -28,14 +28,13 @@ export default function Peaches() {
       {/* Hero */}
       <div className="flex lg:flex-row flex-col mt-5 gap-10 w-full">
         <h1 className="text-white lg:text-4xl md:text-2xl lg:mr-96 text-2xl uppercase satoshi-regular">
-          Peaches Pilates
+          Deus Ex Machina
         </h1>
         <h6 className="flex flex-col text-white">
-          Peaches Pilates is more than just a pilates studio. They combine the welcoming feel of a small-town store with the playlist cred of an early 2000s club. While they do not serve sandwiches or vodka tonics, they offer great hugs and even better workouts. Peaches Pilates is a community of like-minded individuals supporting each other on the journey to health and happiness.
-          <p className="text-xs mt-4">
-            ©2024 All images and materials are copyrighted and owned by Peaches Pilates.
+          Deus Ex Machina is a global community of artists, itinerants and enthusiasts. We are driven by a desire to celebrate creativity, and the honesty and enjoyment of the machine, be it in the form of hand-built motorcycles, custom surfboards or converted industrial spaces. Founded in 2006 in Sydney, Australia by Dare Jennings and Carby Tuckwell, it is their continued vision that has launched Deus around the world and fostered a culture of adventure and inclusivity.          <p className="text-xs mt-4">
+          ©2024 All images and materials are copyrighted and owned by Deus Ex Machina.
           </p>        
-          <Link href={"https://peachespilates.com/"} target="_blank" className="btn btn-tertiary mt-4 self-start">
+          <Link href={"https://deuscustoms.com.au/"} target="_blank" className="btn btn-tertiary mt-4 self-start">
             visit live site ↗
           </Link>
         </h6>
@@ -53,19 +52,19 @@ export default function Peaches() {
         className="mySwiper hover:cursor-grab	mt-40"
       >
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates1.webp" width={500} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/deusexmachina/Deus1.webp" width={500} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates2.webp" width={500} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/deusexmachina/Deus5.webp" width={500} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates3.webp" width={500} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/deusexmachina/Deus3.webp" width={500} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates4.webp" width={500} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/deusexmachina/deus.4.jpg" width={500} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates5.webp" width={500} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/deusexmachina/Deus6.webp" width={500} height={100}></Image>
         </SwiperSlide>
       </Swiper>
       </div>
@@ -78,19 +77,19 @@ export default function Peaches() {
         className="mySwiper hover:cursor-grab	mt-40"
       >
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates1.webp" width={1000} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/deusexmachina/Deus1.webp" width={1000} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates2.webp" width={2000} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/deusexmachina/Deus5.webp" width={1000} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates3.webp" width={2000} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/deusexmachina/Deus3.webp" width={1000} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates5.webp" width={2000} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/deusexmachina/deus.4.jpg" width={1000} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates6.webp" width={2000} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/deusexmachina/Deus6.webp" width={1000} height={100}></Image>
         </SwiperSlide>
       </Swiper>
 
@@ -103,8 +102,8 @@ export default function Peaches() {
         
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5 mt-3">
       <div className="lg:h-96 h-48 flex flex-col justify-end">
-        <Link href={"/work/mcgregor-coxall"} className="relative group h-96 block rounded-lg overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/images/McGregorCoxall.jpg')] bg-cover bg-center transition-all duration-300 group-hover:blur-sm"></div>
+        <Link href={"/work/peaches-pilates"} className="relative group h-96 block rounded-lg overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/images/PeachesPilates.jpg')] bg-cover bg-center transition-all duration-300 group-hover:blur-sm"></div>
           <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <p className="px-3 py-1 uppercase text-black text-xs rounded-full bg-white">
               Explore
@@ -112,12 +111,12 @@ export default function Peaches() {
           </div>
         </Link>
         <h5 className="mt-2 text-white font-light text-sm">
-          McGregor Coxall
+          Peaches Pilates
         </h5>
       </div>
       <div className="lg:h-96 h-48 flex flex-col justify-end">
-        <Link href={"/work/deus-ex-machina"} className="relative group h-96 block rounded-lg overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/images/DeusExMachina.webp')] bg-cover bg-center transition-all duration-300 group-hover:blur-sm"></div>
+        <Link href={"/work/carve"} className="relative group h-96 block rounded-lg overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/images/Carve.webp')] bg-cover bg-center transition-all duration-300 group-hover:blur-sm"></div>
           <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <p className="px-3 py-1 uppercase text-black text-xs rounded-full bg-white">
               Explore
@@ -125,11 +124,11 @@ export default function Peaches() {
           </div>
         </Link>
         <h5 className="mt-2 text-white font-light text-sm">
-          Deus Ex Machina
+          Carve
         </h5>
       </div>
       <div className="lg:h-96 h-48 flex flex-col justify-end">
-        <Link href={"/work/ocean-and-earth"} className="relative group h-96 block rounded-lg overflow-hidden">
+        <Link href={"/work/peaches-pilates"} className="relative group h-96 block rounded-lg overflow-hidden">
           <div className="absolute inset-0 bg-[url('/images/OceanAndEarth.webp')] bg-cover transition-all duration-300 group-hover:blur-sm"></div>
           <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <p className="px-3 py-1 uppercase text-black text-xs rounded-full bg-white">

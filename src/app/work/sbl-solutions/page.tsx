@@ -28,14 +28,14 @@ export default function Peaches() {
       {/* Hero */}
       <div className="flex lg:flex-row flex-col mt-5 gap-10 w-full">
         <h1 className="text-white lg:text-4xl md:text-2xl lg:mr-96 text-2xl uppercase satoshi-regular">
-          Peaches Pilates
+          SBL Soltions
         </h1>
         <h6 className="flex flex-col text-white">
-          Peaches Pilates is more than just a pilates studio. They combine the welcoming feel of a small-town store with the playlist cred of an early 2000s club. While they do not serve sandwiches or vodka tonics, they offer great hugs and even better workouts. Peaches Pilates is a community of like-minded individuals supporting each other on the journey to health and happiness.
+          At SBL Solutions we invest in all our people by setting them on a path that allows them to grow and succeed. Our people are encouraged to speak up and seek any type of assistance needed. This attitude of seeking help and assistance is linked to our strong and positive safety culture across our company.
           <p className="text-xs mt-4">
-            ©2024 All images and materials are copyrighted and owned by Peaches Pilates.
+            ©2024 All images and materials are copyrighted and owned by SBL Soltions.
           </p>        
-          <Link href={"https://peachespilates.com/"} target="_blank" className="btn btn-tertiary mt-4 self-start">
+          <Link href={"https://sblsolutions.com.au/"} target="_blank" className="btn btn-tertiary mt-4 self-start">
             visit live site ↗
           </Link>
         </h6>
@@ -53,7 +53,7 @@ export default function Peaches() {
         className="mySwiper hover:cursor-grab	mt-40"
       >
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates1.webp" width={500} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/sblsolutions/SBL1.jpg" width={500} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
         <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates2.webp" width={500} height={100}></Image>
@@ -78,19 +78,19 @@ export default function Peaches() {
         className="mySwiper hover:cursor-grab	mt-40"
       >
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates1.webp" width={1000} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/sblsolutions/SBL1.jpg" width={1000} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates2.webp" width={2000} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/sblsolutions/SBL2.jpg" width={2000} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates3.webp" width={2000} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/sblsolutions/SBL3.jpg" width={2000} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates5.webp" width={2000} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/sblsolutions/SBL4.jpg" width={2000} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates6.webp" width={2000} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/sblsolutions/SBL5.jpg" width={2000} height={100}></Image>
         </SwiperSlide>
       </Swiper>
 

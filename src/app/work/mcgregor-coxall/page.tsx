@@ -15,7 +15,7 @@ import Image from "next/image";
 
 
 
-export default function Home() {
+export default function McGregor() {
   
   return (
     <body className="bg-[#171717] p-5">
@@ -35,7 +35,7 @@ export default function Home() {
           <p className="text-xs mt-4">
             ©2024 All images and materials are copyrighted and owned by McGregor Coxall. ‍
           </p>        
-          <Link href={""} className="btn btn-tertiary mt-4 self-start">
+          <Link href={"https://mcgregorcoxall.com/"} target="_blank" className="btn btn-tertiary mt-4 self-start">
             visit live site ↗
           </Link>
         </h6>

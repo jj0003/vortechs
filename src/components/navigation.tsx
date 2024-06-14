@@ -10,17 +10,17 @@ const NavigationMenuDemo = () => {
         <NavigationMenu.List className="flex justify-center bg-white p-1 gap-1 rounded-full">
           
           <NavigationMenu.Item>
-            <Link href="/work" passHref>
+            <Link href="/" passHref>
               <NavigationMenu.Trigger className="flex items-center justify-between px-3 py-1 rounded-full text-gray-600 hover:bg-gray-100 focus:outline-none">
-                work
+                home
               </NavigationMenu.Trigger>
             </Link>
           </NavigationMenu.Item>
 
           <NavigationMenu.Item>
-            <Link href="/studio" passHref>
+            <Link href="/work" passHref>
               <NavigationMenu.Trigger className="flex items-center justify-between px-3 py-1 rounded-full text-gray-600 hover:bg-gray-100 focus:outline-none">
-                studio
+              work
               </NavigationMenu.Trigger>
             </Link>
           </NavigationMenu.Item>
