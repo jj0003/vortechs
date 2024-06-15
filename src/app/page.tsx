@@ -21,7 +21,7 @@ export default function Home() {
         <Link href={""} className="btn-link">
           (vortechs values)
         </Link>
-        <h1 className="lg:text-7xl md:text-4xl text-4xl uppercase satoshi-regular">
+        <h1 className="lg:text-7xl md:text-6xl text-4xl uppercase satoshi-regular">
           We bring stunning online experiences at an <i>affordable price</i>.
         </h1>
       </div>
@@ -154,7 +154,7 @@ export default function Home() {
       
 
       {/* Apply for a Slot */}
-      <h1 className="text-7xl uppercase satoshi-regular mt-20">
+      <h1 className="lg:text-7xl md:text-6xl text-4xl uppercase satoshi-regular mt-20">
         APPLY FOR A SLOT TO BECOME ONE OF FIVE NEW CLIENTS WE SELECT EVERY YEAR
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5 mt-4 mb-20">

@@ -56,16 +56,16 @@ export default function Peaches() {
         <Image alt="" className="rounded-md" src="/images/sblsolutions/SBL1.jpg" width={500} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates2.webp" width={500} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/sblsolutions/SBL2.jpg" width={500} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates3.webp" width={500} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/sblsolutions/SBL3.jpg" width={500} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates4.webp" width={500} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/sblsolutions/SBL4.jpg" width={500} height={100}></Image>
         </SwiperSlide>
         <SwiperSlide >
-        <Image alt="" className="rounded-md" src="/images/peachespilates/PeachesPilates5.webp" width={500} height={100}></Image>
+        <Image alt="" className="rounded-md" src="/images/sblsolutions/SBL5.jpg" width={500} height={100}></Image>
         </SwiperSlide>
       </Swiper>
       </div>
@@ -116,8 +116,8 @@ export default function Peaches() {
         </h5>
       </div>
       <div className="lg:h-96 h-48 flex flex-col justify-end">
-        <Link href={"/work/deus-ex-machina"} className="relative group h-96 block rounded-lg overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/images/DeusExMachina.webp')] bg-cover bg-center transition-all duration-300 group-hover:blur-sm"></div>
+        <Link href={"/work/carve"} className="relative group h-96 block rounded-lg overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/images/Carve.webp')] bg-cover bg-center transition-all duration-300 group-hover:blur-sm"></div>
           <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <p className="px-3 py-1 uppercase text-black text-xs rounded-full bg-white">
               Explore
@@ -125,12 +125,12 @@ export default function Peaches() {
           </div>
         </Link>
         <h5 className="mt-2 text-white font-light text-sm">
-          Deus Ex Machina
+          Carve
         </h5>
       </div>
       <div className="lg:h-96 h-48 flex flex-col justify-end">
-        <Link href={"/work/ocean-and-earth"} className="relative group h-96 block rounded-lg overflow-hidden">
-          <div className="absolute inset-0 bg-[url('/images/OceanAndEarth.webp')] bg-cover transition-all duration-300 group-hover:blur-sm"></div>
+        <Link href={"/work/bw-water"} className="relative group h-96 block rounded-lg overflow-hidden">
+          <div className="absolute inset-0 bg-[url('/images/BWWater.jpg')] bg-cover transition-all duration-300 group-hover:blur-sm"></div>
           <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <p className="px-3 py-1 uppercase text-black text-xs rounded-full bg-white">
               Explore
@@ -138,7 +138,7 @@ export default function Peaches() {
           </div>
         </Link>
         <h5 className="mt-2 text-white font-light text-sm">
-          Ocean And Earth
+          BW Water
         </h5>
       </div>
       </div>

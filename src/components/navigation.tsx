@@ -6,6 +6,11 @@ import Link from 'next/link';
 const NavigationMenuDemo = () => {
   return (
     <div className="">
+      <div className='md:hidden flex justify-between items-center w-full px-5 py-2'>
+        
+      </div>
+
+      <div className='hidden md:flex'>
       <NavigationMenu.Root className="flex justify-end">
         <NavigationMenu.List className="flex justify-center bg-white p-1 gap-1 rounded-full">
           
@@ -43,6 +48,8 @@ const NavigationMenuDemo = () => {
 
         </NavigationMenu.List>
       </NavigationMenu.Root>
+      </div>
+      
     </div>
     
   );
