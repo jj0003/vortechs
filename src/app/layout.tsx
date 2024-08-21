@@ -2,10 +2,9 @@ import React from 'react';
 import type { Metadata } from "next";
 import "./globals.css";
 import '@radix-ui/themes/styles.css';
-import "./fonts.css"; // Add this line
-import Navigation from "@/components/navigation";
+import "./fonts.css";
 import SmoothScrolling from "@/components/SmoothScrolling";
-import Footer from '@/components/footer';
+import ClientWrapper from "@/components/ClientWrapper";
 
 export const metadata: Metadata = {
   title: "VORTECHS",
@@ -19,16 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <SmoothScrolling>
-    <html lang="en">
-      <body style={{ fontFamily: 'Satoshi, sans-serif' }} className='bg-[#EEEEEE] p-5'>
-        <nav className="sticky top-0 z-50 flex items-center justify-between">
-          <h1 className="satoshi-bold-italic">vortechs</h1>
-          <Navigation />
-        </nav>
-        {children}
-        <Footer/>
-      </body>
-    </html>
+      <html lang="en">
+        <body>
+          <ClientWrapper>
+            {children}
+          </ClientWrapper>
+        </body>
+      </html>
     </SmoothScrolling>
   );
 }
