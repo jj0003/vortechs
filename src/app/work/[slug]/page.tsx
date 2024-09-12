@@ -32,21 +32,24 @@ export default function ProjectPage() {
 
   useEffect(() => {
     if (!slug) return;
-  
+
     // Fetch the specific project based on slug
     axios.get(`${API_URL}/api/projects?filters[slug][$eq]=${slug}&populate=*`)
       .then((response) => {
         const projectData = response.data.data[0]?.attributes;
-  
+
+        // Build the project object, ensuring `url` is always available
         const projectWithUrl: Work = {
           title: projectData.title || "",
           description: projectData.description || "",
           copyright: projectData.copyright || "",
           slug: projectData.slug || "",
-          url: `${API_URL}/work/${slug}`,
-          images: projectData.images?.data.length ? projectData.images : { data: [] }
+          url: `${API_URL}/work/${slug}`, // Generate the URL
+          images: projectData.images?.data.length
+            ? projectData.images
+            : { data: [] } // Ensure images is never undefined
         };
-  
+
         setProject(projectWithUrl);
         setLoading(false);
       })
@@ -54,33 +57,35 @@ export default function ProjectPage() {
         console.error('Error fetching project:', error);
         setLoading(false);
       });
-  
+
     // Fetch all projects for "More to Explore"
     axios.get(`${API_URL}/api/projects?populate=*`)
       .then((response) => {
         const allProjects = response.data.data.map((item: { attributes: any }) => {
           const workAttributes = item.attributes;
-  
+
+          // Build each explore project
           const workWithUrl: Work = {
             title: workAttributes.title || "",
             description: workAttributes.description || "",
             copyright: workAttributes.copyright || "",
             slug: workAttributes.slug || "",
-            url: `${API_URL}/work/${workAttributes.slug}`,
-            images: workAttributes.images?.data.length ? workAttributes.images : { data: [] }
+            url: `${API_URL}/work/${workAttributes.slug}`, // Generate the URL
+            images: workAttributes.images?.data.length
+              ? workAttributes.images
+              : { data: [] } // Ensure images is never undefined
           };
-  
+
           return workWithUrl;
         });
-  
+
         const shuffledProjects = allProjects.sort(() => 0.5 - Math.random());
-        setExploreProjects(shuffledProjects.slice(0, 3));
+        setExploreProjects(shuffledProjects.slice(0, 3)); // Pick 3 random projects
       })
       .catch((error) => {
         console.error('Error fetching explore projects:', error);
       });
-  }, [slug, API_URL]); // Include API_URL as a dependency
-  
+  }, [slug]);
 
   return (
     <ProjectPageContent 
