@@ -24,14 +24,15 @@ export default function Home() {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    axios.get('http://localhost:1337/api/projects?populate=*')
+    axios.get('https://healing-hope-db164f5808.strapiapp.com/api/projects?populate=*')
       .then((response) => {
+        console.log(response.data.data); // Check if image data is coming correctly
         setProjects(response.data.data);
-        setLoading(false); // Data has been fetched, stop loading
+        setLoading(false);
       })
       .catch((error) => {
         console.error('Error fetching projects:', error);
-        setLoading(false); // Stop loading even if there's an error
+        setLoading(false);
       });
   }, []);
 
@@ -67,7 +68,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0, transition: { duration: 0.8, ease: 'easeOut' } }}
       >
-        <Link href={""} className="btn-link">
+        <Link href={"/about"} className="btn-link">
           (vortechs values)
         </Link>
         <h1 className="lg:text-7xl md:text-6xl text-4xl uppercase satoshi-regular">
@@ -82,7 +83,9 @@ export default function Home() {
         ) : (
           projects.map((item) => {
             const imageUrl = item.attributes.images?.data?.[0]?.attributes.url;
-            const fullImageUrl = imageUrl ? `http://localhost:1337${imageUrl}` : '/default-image.jpg';
+            const fullImageUrl = imageUrl?.startsWith('http')
+              ? imageUrl // Use the full URL if already provided
+              : `https://healing-hope-db164f5808.strapiapp.com${imageUrl}`; // Otherwise, prepend the base URL
 
             return (
               <motion.div
@@ -181,16 +184,24 @@ export default function Home() {
         {[...Array(5)].map((_, index) => (
           <motion.div 
             key={index} 
-            className="relative p-4 rounded-md border-2 border-gray-400 bg-[#0049FF] lg:h-96 md:h-72 sm:h-40 h-40 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+            className={`relative p-4 rounded-md border-2 border-gray-400 ${
+              index === 0 || index === 1 ? 'bg-gray-400' : 'bg-[#0049FF] transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none'
+            } lg:h-96 md:h-72 sm:h-40 h-40`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0, transition: { delay: 0.1 * index, duration: 0.8, ease: 'easeOut' } }}
           >
             <h5 className="font-medium uppercase text-3xl text-white">
               slot<br></br>{index + 1}
             </h5>
-            <Link href={"https://cal.com/vortechs/30min"} className="absolute bottom-4 left-4 btn btn-apply hover:bg-black">
-              🔥available
-            </Link>
+            {index === 0 || index === 1 ? (
+              <span className="absolute bottom-4 left-4 btn btn-disabled cursor-not-allowed">
+                Unavailable
+              </span>
+            ) : (
+              <Link href={"https://cal.com/vortechs/30min"} className="absolute bottom-4 left-4 btn btn-apply hover:bg-black">
+                🔥available
+              </Link>
+            )}
           </motion.div>
         ))}
       </div>
