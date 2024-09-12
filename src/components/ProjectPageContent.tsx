@@ -7,7 +7,8 @@ import { motion } from 'framer-motion';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-interface Project {
+// Renaming the interface from Project to Work
+interface Work {
   title: string;
   description: string;
   copyright: string;
@@ -24,8 +25,8 @@ interface Project {
 
 interface Props {
   loading: boolean;
-  project: Project | null;
-  exploreProjects: Project[];
+  project: Work | null;
+  exploreProjects: Work[];
 }
 
 const fadeInVariants = {
@@ -35,7 +36,7 @@ const fadeInVariants = {
 
 const ProjectPageContent: React.FC<Props> = ({ loading, project, exploreProjects }) => {
   if (!project) {
-    return <p>Project not found.</p>;
+    return <p>Work not found.</p>; // Adjusted to "Work" instead of "Project"
   }
 
   const getFullImageUrl = (url: string) => {
