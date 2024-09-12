@@ -28,7 +28,9 @@ export default function ProjectPage() {
   const [exploreProjects, setExploreProjects] = useState<Work[]>([]); // Using Work directly
   
   const { slug } = useParams(); // Get slug from params
-  const API_URL = process.env.NEXT_PUBLIC_STRAPI_API_URL;
+
+  // Directly hardcode your Strapi URL
+  const API_URL = 'https://healing-hope-db164f5808.strapiapp.com'; // Hardcoded Strapi API URL
 
   useEffect(() => {
     if (!slug) return;
