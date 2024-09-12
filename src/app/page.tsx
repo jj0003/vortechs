@@ -72,7 +72,7 @@ export default function Home() {
           (vortechs values)
         </Link>
         <h1 className="lg:text-7xl md:text-6xl text-4xl uppercase satoshi-regular">
-          We bring stunning online experiences at an <i>affordable price</i>.
+          We bring <i>stunning online experiences</i> at the reach of small businesses.
         </h1>
       </motion.div>
 

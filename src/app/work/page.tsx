@@ -42,14 +42,15 @@ const ProjectsPage: React.FC = () => {
 
   const renderSkeletons = () => (
     <>
-      <div className="relative bg-gray-300 rounded-lg h-64 animate-pulse"></div>
-      <div className="relative bg-gray-300 rounded-lg h-64 animate-pulse"></div>
-      <div className="relative bg-gray-300 rounded-lg h-64 animate-pulse"></div>
-      <div className="relative bg-gray-300 rounded-lg h-64 animate-pulse"></div>
-      <div className="relative bg-gray-300 rounded-lg h-64 animate-pulse"></div>
-      <div className="relative bg-gray-300 rounded-lg h-64 animate-pulse"></div>
-      <div className="relative bg-gray-300 rounded-lg h-64 animate-pulse"></div>
-      <div className="relative bg-gray-300 rounded-lg h-64 animate-pulse"></div>
+      <div className="relative bg-gray-300 rounded-lg h-32 animate-pulse"></div>
+      <div className="relative bg-gray-300 rounded-lg h-32 animate-pulse"></div>
+      <div className="relative bg-gray-300 rounded-lg h-32 animate-pulse"></div>
+      <div className="relative bg-gray-300 rounded-lg h-32 animate-pulse"></div>
+      <div className="relative bg-gray-300 rounded-lg h-32 animate-pulse"></div>
+      <div className="relative bg-gray-300 rounded-lg h-32 animate-pulse"></div>
+      <div className="relative bg-gray-300 rounded-lg h-32 animate-pulse"></div>
+      <div className="relative bg-gray-300 rounded-lg h-32 animate-pulse"></div>
+
     </>
   );
 
