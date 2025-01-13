@@ -3,8 +3,10 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="relative bg-black rounded-md py-5 px-10 h-auto md:h-96">
-      {/* Centered title */}
+<div 
+      className="relative rounded-md py-5 px-10 h-auto md:h-96" 
+      style={{ backgroundImage: 'url(/images/vortechs-background-businesscard.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+    >      {/* Centered title */}
       <div className="flex justify-center md:justify-start">
         <h1 className="satoshi-bold lg:text-8xl md:text-6xl text-4xl text-white uppercase tracking-tighter text-center md:text-left">
           vortechs
@@ -12,16 +14,18 @@ const Footer = () => {
       </div>
 
       {/* Booking button for larger screens */}
-      <div className="absolute top-5 right-10 hidden md:block">
-        <Link href="https://cal.com/vortechs/30min" className="btn btn-tertiary">
-          Book a free call today
+      <div className="absolute top-5 text-white
+             hover:bg-white border-white border-8 hover:text-black px-6 py-2 rounded-full transition-colors duration-200 ease-in-out text-center py-2 px-10 right-10 hidden md:block">
+        <Link href="https://cal.com/vortechs/30min">
+          book a free call today
         </Link>
       </div>
 
       {/* Booking button for smaller screens */}
-      <div className="mt-10 text-center md:hidden">
-        <Link href="https://cal.com/vortechs/30min" className="btn btn-tertiary">
-          Book a free call today
+      <div className="mt-10 text-white font-black
+             hover:bg-white border-white border-4 hover:text-black px-6 py-2 rounded-full transition-colors duration-200 ease-in-out text-center py-2 px-10 md:hidden">
+        <Link href="https://cal.com/vortechs/30min">
+          book a free call today
         </Link>
       </div>
 

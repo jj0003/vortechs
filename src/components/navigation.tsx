@@ -12,12 +12,14 @@ const NavigationMenuDemo = () => {
 
       <div className=''>
       <NavigationMenu.Root className="flex justify-end">
-        <NavigationMenu.List className="flex justify-center bg-white p-1 gap-1 rounded-full">
-          
+        <NavigationMenu.List className="flex justify-center items-center bg-white p-1 gap-2 rounded-full">
+        
+
           <NavigationMenu.Item>
-            <Link href="/" passHref>
-              <NavigationMenu.Trigger className="flex items-center justify-between px-3 py-1 rounded-full text-gray-600 hover:bg-gray-100 focus:outline-none">
-                home
+            <Link href="https://cal.com/vortechs/30min" passHref>
+              <NavigationMenu.Trigger className="flex items-center text-white justify-between bg-[#0049FF] 
+             hover:bg-white border-[#0049FF] border-2 hover:text-[#0049FF] px-6 py-2 rounded-full transition-colors duration-200 ease-in-out">
+                book a call
               </NavigationMenu.Trigger>
             </Link>
           </NavigationMenu.Item>
