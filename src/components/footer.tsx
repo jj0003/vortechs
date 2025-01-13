@@ -39,27 +39,6 @@ const Footer = () => {
         <p>© 2024 Vortechs. All rights reserved.</p>
       </div>
 
-      {/* Bottom Right Text */}
-      <div className="absolute bottom-5 right-10 text-white hidden md:block">
-        <Link href="/privacy-policy" className="hover:text-blue-400">
-          Privacy Policy
-        </Link>{" "}
-        |{" "}
-        <Link href="/terms-of-service" className="hover:text-blue-400">
-          Terms of Service
-        </Link>
-      </div>
-
-      {/* Bottom Right Text for smaller screens */}
-      <div className="mt-4 text-white text-center md:hidden">
-        <Link href="/privacy-policy" className="hover:text-blue-400">
-          Privacy Policy
-        </Link>{" "}
-        |{" "}
-        <Link href="/terms-of-service" className="hover:text-blue-400">
-          Terms of Service
-        </Link>
-      </div>
     </div>
   );
 };
