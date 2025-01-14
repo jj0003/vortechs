@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { url } from "inspector";
-import WallOfLove from "@/components/WallOfLove";
+import WallOfLove from "@/components/home/WallOfLove";
 
 const localProjects = [
  
@@ -51,10 +51,10 @@ const localProjects = [
 
   {
     id: 7,
-    slug: "stokke",
-    title: "Stokke*",
-    imageUrl: "/images/stokke.webp",
-    url: "https://https://www.stokke.com/",
+    slug: "sbl-solutions",
+    title: "SBL Solutions*",
+    imageUrl: "/images/sblsolutions.webp",
+    url: "https://sblsolutions.com.au/",
   },
 ];
 
