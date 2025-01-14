@@ -23,7 +23,7 @@ const localReviews = [
     id: 4,
     name: "Zoe",
     title: "@Personal",
-    review: "Jan&apos;s work ethic is unparalleled. He is creative, detail-oriented, and delivers beyond expectations!",
+    review: "His work ethic is unparalleled. He is creative, detail-oriented, and delivers beyond expectations!",
   },
 ];
 
