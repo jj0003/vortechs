@@ -63,7 +63,7 @@ const WallOfLove = () => {
             >
               <h5 className="font-bold text-lg">{review.name}</h5>
               <p className="text-sm text-gray-400">{review.title}</p>
-              <p className="mt-2 text-sm">"{review.review}"</p>
+              <p className="mt-2 text-sm">&quot;{review.review}&quot;</p>
             </motion.div>
           ))}
         </div>
