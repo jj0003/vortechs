@@ -32,14 +32,7 @@ const localProjects = [
     url: "https://stevensonchiropractic.com.au",
   },
 
-  {
-    id: 4,
-    slug: "deus-ex-machina",
-    title: "Deus Ex Machina*",
-    imageUrl: "/images/deus.webp",
-    url: "https://https://deuscustoms.com.au/",
-  },
-
+  
   {
     id: 5,
     slug: "mcgregor-coxall",
