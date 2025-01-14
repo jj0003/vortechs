@@ -74,7 +74,7 @@ export default function Home() {
       >
         <h6 className="flex">
           Vortechs is your go-to web development studio, specializing in
-          affordable and stunningly fast web applications. We pride ourselves on
+          stunningly fast web applications. We pride ourselves on
           creating fresh, dynamic experiences that captivate and engage users.
           At Vortechs, we are always exploring new technologies to ensure our
           solutions are both cutting-edge and effective.
