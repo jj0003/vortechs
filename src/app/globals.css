@@ -157,3 +157,11 @@ p {
   background: lightgrey; /* track color */
   border-radius: 10px; /* rounded corners for the track */
 }
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}

@@ -3,14 +3,16 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { url } from "inspector";
+import WallOfLove from "@/components/WallOfLove";
 
 const localProjects = [
+ 
   {
-    id: 1,
-    slug: "stevenson-chiropractic",
-    title: "Stevenston Chiropractic",
-    imageUrl: "/images/stevensonchiropractic.jpg",
-    url: "https://stevensonchiropractic.com.au",
+    id: 3,
+    slug: "cirrus-power-systems",
+    title: "Cirrus Power Systems*",
+    imageUrl: "/images/cps.jpg",
+    url: "https://cirruspowersystems.com",
   },
 
   {
@@ -20,12 +22,14 @@ const localProjects = [
     imageUrl: "/images/matesuite.webp",
     url: "https://matesuite.com",
   },
+  
+
   {
-    id: 3,
-    slug: "cirrus-power-systems",
-    title: "Cirrus Power Systems",
-    imageUrl: "/images/cps.jpg",
-    url: "https://cirruspowersystems.com",
+    id: 1,
+    slug: "stevenson-chiropractic",
+    title: "Stevenston Chiropractic",
+    imageUrl: "/images/stevensonchiropractic.jpg",
+    url: "https://stevensonchiropractic.com.au",
   },
 
   {
@@ -53,6 +57,7 @@ const localProjects = [
     url: "https://https://www.stokke.com/",
   },
 ];
+
 
 export default function Home() {
   return (
@@ -221,57 +226,7 @@ export default function Home() {
       </motion.div>
 
       {/* Apply for a Slot */}
-      <motion.h1
-        className="lg:text-7xl md:text-6xl text-4xl uppercase satoshi-regular mt-20"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{
-          opacity: 1,
-          y: 0,
-          transition: { duration: 0.8, ease: "easeOut" },
-        }}
-      >
-        APPLY FOR A SLOT TO BECOME ONE OF FIVE NEW CLIENTS WE SELECT EVERY YEAR
-      </motion.h1>
-
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5 mt-4 mb-20">
-        {[...Array(5)].map((_, index) => (
-          <motion.div
-            key={index}
-            className={`relative p-4 rounded-md border-2 border-gray-400 ${
-              index === 0 || index === 1
-                ? "bg-gray-400"
-                : "bg-[#0049FF] transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
-            } lg:h-96 md:h-72 sm:h-40 h-40`}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                delay: 0.1 * index,
-                duration: 0.8,
-                ease: "easeOut",
-              },
-            }}
-          >
-            <h5 className="font-medium uppercase text-3xl text-white">
-              slot<br></br>
-              {index + 1}
-            </h5>
-            {index === 0 || index === 1 ? (
-              <span className="absolute bottom-4 left-4 btn btn-disabled cursor-not-allowed">
-                Unavailable
-              </span>
-            ) : (
-              <Link
-                href={"https://cal.com/vortechs/30min"}
-                className="absolute bottom-4 left-4 btn btn-apply hover:bg-black"
-              >
-                🔥available
-              </Link>
-            )}
-          </motion.div>
-        ))}
-      </div>
+      <WallOfLove />
     </div>
   );
 }
