@@ -10,7 +10,7 @@ const localReviews = [
   {
     id: 2,
     name: "Daniel",
-    title: "@COGBranding",
+    title: "@HomeOfAccountants",
     review: "I have worked with Jan on multiple projects and he always delivers. He is very professional and has a great eye for design.",
   },
   {
