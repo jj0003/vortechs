@@ -31,12 +31,12 @@ const Footer = () => {
 
       {/* Bottom Left Text */}
       <div className="absolute bottom-5 left-10 text-white hidden md:block">
-        <p>© 2024 Vortechs. All rights reserved.</p>
+        <p>© 2025 Vortechs. All rights reserved.</p>
       </div>
 
       {/* Bottom Left Text for smaller screens */}
       <div className="mt-10 text-white text-center md:hidden">
-        <p>© 2024 Vortechs. All rights reserved.</p>
+        <p>© 2025 Vortechs. All rights reserved.</p>
       </div>
 
     </div>
